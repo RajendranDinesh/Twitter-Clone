@@ -1,7 +1,9 @@
-import SideBar from "./sideBar/sideBar";
+import HomePage from "./home/home";
+import styles from "./page.module.css";
 
 export default function Home(){
-  return (<>
-  <SideBar/>
-  </>);
+  return (
+  <div className={styles.page}>
+    <HomePage/>
+  </div>);
 }
