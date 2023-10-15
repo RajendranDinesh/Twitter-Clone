@@ -66,6 +66,13 @@
     background-color: inherit;
 }
 
+.menu_item_text_focused {
+    margin-left: 0.5em;
+    background-color: inherit;
+    
+    font-weight: 700;
+}
+
 .post_container {
     width: 70%;
 }

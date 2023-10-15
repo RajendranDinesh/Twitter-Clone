@@ -1,0 +1,55 @@
+.logo {
+    background-color: inherit;
+}
+
+.more_options {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 70%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index:100;
+}
+
+.more_options_container {
+    border-radius: 1em;
+    min-height: 192px;
+    width: 300px;
+
+    border: 1px solid rgba(136, 129, 115, 0.582);
+    box-shadow: 0 0 10px rgba(136, 129, 115, 0.582);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.more_options_container .logo {
+    margin-right: 16px;
+}
+
+.more_options_item {
+    padding: 10px;
+    color: antiquewhite;
+    font-size: 1.6em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+
+    width: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.more_options_item span{
+    background-color: inherit;
+}
+
+.more_options_item:hover {
+    background-color: #1f1f1f;
+}
