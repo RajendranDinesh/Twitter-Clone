@@ -16,6 +16,10 @@ function SideBar() {
     const { push } = useRouter();
     const { activePage, setActivePage } = useActivePage();
 
+    const routesToHideSidebar = ['signup', 'login'];
+
+    const shouldHideSidebar = routesToHideSidebar.includes(activePage);
+
     const handleMenuItemClick = (pageName) => () => {
         setActivePage(pageName);
         push(pageName);
@@ -23,7 +27,8 @@ function SideBar() {
 
     const [userName, setUserName] = useState('dineshpr');
 
-    return (
+    return (<>
+        {!shouldHideSidebar && 
         <div className={styles.top_container}>
             <div className={styles.logo_container}>
                 <Image src={Logo} width={39} height={40} className={styles.logo}/>
@@ -49,7 +54,7 @@ function SideBar() {
                 <ProfileOptions />
 
             </div>
-        </div>
+        </div>}</>
     );
 };
 

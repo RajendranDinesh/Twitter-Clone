@@ -1,0 +1,184 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.left_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 50vw;
+    background-color: #161616;
+}
+
+.right_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    height: 100%;
+    width: 50vw;
+
+    background-color: #161616;
+}
+
+.top_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.secondary_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.signup_options_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.signup_options_container button {
+    margin: 1em;
+    padding: 0.6em;
+    width: 22em;
+    border-radius: 2em;
+    border: none;
+    background-color: #fff;
+    color: #161616;
+    font-size: 0.6em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signup_options_container .create_account_btn {
+    margin: 0.8em;
+    padding: 1em;
+    width: 22em;
+    border-radius: 2em;
+    border: none;
+    background-color: #1DA1F2;
+    color: #f6f6f6;
+    font-size: 0.6em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signup_options_container .create_account_btn_text {
+    color: #f6f6f6;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.or_container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.8em;
+}
+
+.or_container .line {
+    width: 7em;
+    height: 0.01em;
+    background-color: #918b8b;
+
+    margin: 0.4em;
+}
+
+.or_container span {
+    color: #918b8b;
+}
+
+.provider_logo {
+    background-color: transparent;
+    margin-right: 0.4em;
+}
+
+.service_signup_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_options_container .terms_text {
+    max-width: 32em;
+
+    color: #AAB8C2;
+    font-size: 0.42em;
+    font-weight: 200;
+
+    align-self: flex-start;
+    margin-left: 2em;
+}
+
+.terms_text a:link {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.terms_text a:visited {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.terms_text a:hover {
+    color: #1DA1F2;
+    text-decoration: underline;
+}
+
+.signin_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 2em;
+
+    color: white;
+}
+
+.signin_container span {
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.signin_container button {
+    padding: 0.7em;
+    width: 20em;
+    border-radius: 2em;
+    border: 1px solid #1DA1F2;
+    background-color: transparent;
+    color: #1DA1F2;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}

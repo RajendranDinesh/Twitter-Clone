@@ -1,19 +1,16 @@
-'use client';
+'use client'
 import { useActivePage } from "@/context/activePage";
 import { useEffect } from "react";
 
-function HomePage(){
+export default function Login() {
 
     const { activePage, setActivePage } = useActivePage();
 
     useEffect(() => {
-        setActivePage('/');
-    })
-    return (
-        <>
-        <p style={{color:'white'}}>Home Page</p>
-        </>
-    );
-}
+        setActivePage('login');
+    });
 
-export default HomePage;
+    return (
+        <p style={{color: "white"}}>{activePage}</p>
+    );
+};

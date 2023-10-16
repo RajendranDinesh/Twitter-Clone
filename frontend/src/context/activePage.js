@@ -5,7 +5,7 @@ import { createContext, useContext, useState } from "react";
 const ActivePageContext = createContext();
 
 export function ActivePageProvider({ children }) {
-    const [activePage, setActivePage] = useState("Home");
+    const [activePage, setActivePage] = useState("/");
 
     return (
         <ActivePageContext.Provider value={{ activePage, setActivePage }}>
