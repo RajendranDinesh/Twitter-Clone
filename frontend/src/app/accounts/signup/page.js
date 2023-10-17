@@ -47,13 +47,15 @@ export default function SignUp({searchParams}) {
                     </button>
 
                     <div className={styles.or_container}>
-                        <div className={styles.line}></div>
+                        <div className={styles.line} />
                         <span>or</span>
-                        <div className={styles.line}></div>
+                        <div className={styles.line} />
                     </div>
-                        <Link href='?modal=true' className={styles.create_account_btn_text}>
-                            <button className={styles.create_account_btn}>Create Account</button>
-                        </Link>
+
+                    <Link href='?modal=true' className={styles.create_account_btn_text}>
+                        <button className={styles.create_account_btn}>Create Account</button>
+                    </Link>
+
                     <span className={styles.terms_text}>
                         By signing up, you agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>, including <a href="#">Cookie Use</a>.
                     </span>
@@ -61,9 +63,7 @@ export default function SignUp({searchParams}) {
 
                 <div className={styles.signin_container}>
                     <span>Already have an account?</span>
-                    <button>
-                        Sign In
-                    </button>
+                    <Link href='/accounts/login'><button>Sign In</button></Link>
                 </div>
 
             </div>

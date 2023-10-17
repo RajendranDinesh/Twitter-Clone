@@ -1,0 +1,346 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index:1001;
+}
+
+.modal_container {
+    border-radius: 1em;
+    min-height: 90vh;
+    width: 45vw;
+    padding: 1em;
+
+    border: 1px solid rgba(136, 129, 115, 0.582);
+    box-shadow: 0 0 10px rgba(136, 129, 115, 0.582);
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    color: white;
+}
+
+.modal_top_container {
+    display: flex;
+    align-items: center;
+}
+
+.modal_close {
+    padding: 0.2em;
+    margin-right: 1.5em;
+    cursor: pointer;
+
+    font-size: 1.5em;
+}
+
+.modal_close span{
+    background-color: transparent;
+
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
+
+.modal_close:hover {
+    background-color: rgba(253, 253, 253, 0.178);
+
+    border-radius: 100%;
+}
+
+.modal_logo_container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    padding: 4em;
+}
+
+.form_title{
+    margin-bottom: 2em;
+
+    font-size: large;
+}
+
+.input_containers {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+
+    height: 100%;
+    width: 100%;
+}
+
+.name_input{
+    width: 100%;
+
+    border: 1px solid rgba(136, 129, 115, 0.582);
+    border-radius: 4px;
+    color: wheat;
+
+    font-size: 2em;
+    padding-top: 0.8em; 
+}
+
+.name_input ~.name_label {
+    top: -3em;
+    font-size: 1.2em;
+    color: #1DA1F2;
+}
+
+.name_label {
+    position: relative;
+    top: -1.4em;
+    font-size: 1.4em;
+
+    margin-left: 0.2em;
+    pointer-events: none;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.pass_input{
+    width: 100%;
+
+    border: 1px solid rgba(136, 129, 115, 0.582);
+    border-radius: 4px;
+    color: wheat;
+
+    font-size: 1.7em;
+    padding-top: 1.3em;
+}
+
+.pass_input:focus {
+    outline: none;
+    border: 2px solid #1DA1F2;
+}
+
+.pass_input:focus ~.pass_label {
+    top: -3em;
+    font-size: 1.2em;
+    color: #1DA1F2;
+}
+
+.pass_input:valid ~.pass_label {
+    top: -3em;
+    font-size: 1.2em;
+}
+
+.pass_input:not(:placeholder-shown) ~.pass_label {
+    top: -3em;
+    font-size: 1.2em;
+}
+
+.pass_label {
+    position: relative;
+    top: -1.4em;
+    font-size: 1.4em;
+
+    margin-left: 0.2em;
+    pointer-events: none;
+
+    transition: all 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.pass_label span{
+    display: none;
+    font-size: x-small;
+    color: white;
+
+    margin-left: 1em;
+}
+
+.pass_input:invalid:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+.pass_input:invalid:focus ~ .pass_label span{
+    display: block;
+}
+
+.eye {
+    display: none;
+    position: relative;
+
+    top: -4em;
+    left: 26em;
+
+    background-color: transparent;
+    padding: 0.4em;
+    border-radius: 100%;
+}
+
+.eye:hover {
+    background-color: rgba(253, 253, 253, 0.178);
+    cursor: pointer;
+    border-radius: 100%;   
+}
+
+.pass_input:focus ~.eye {
+    display: block;
+}
+
+.pass_input:valid ~.eye {
+    display: block;
+}
+
+.pass_input:invalid ~.eye {
+    display: block;
+}
+
+.submit_button_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_button {
+    width: 80%;
+    padding: 0.4em;
+
+    border-radius: 10em;
+    border: 1px solid white;
+    cursor: pointer;
+
+    background-color: white;
+
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.otp_input_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3.5em;
+}
+
+.otp_input {
+    width: 2.5vw;
+
+    margin: 1em;
+
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    
+    border: none;
+    border-bottom: 1px solid white;
+
+    outline: none;
+}
+
+.verify_button_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2em;
+}
+
+.verify_button {
+    width:50%;
+
+    background-color: white;
+
+    border: none;
+    border-radius: 25em;
+
+    padding: 0.4em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.welcome_container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    margin-bottom: 10em;
+}
+
+.get_started_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.get_started_link_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get_started_button {
+    width:80%;
+
+    background-color: white;
+
+    border: none;
+    border-radius: 25em;
+
+    padding: 0.4em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.get_started_link_container:link {
+    text-decoration: none;
+}
+
+.signup_container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    margin-top: 2em;
+}
+
+.signup_container a:link {
+    text-decoration: none;
+    color: #1DA1F2;
+}
+
+.signup_container a:visited {
+    color: #1DA1F2;
+}
