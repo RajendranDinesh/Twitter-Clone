@@ -6,6 +6,8 @@ function HomePage(){
 
     const { activePage, setActivePage } = useActivePage();
 
+    document.title = 'Twitter';
+
     useEffect(() => {
         setActivePage('/');
     })

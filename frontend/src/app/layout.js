@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Sidebar from '../sideBar/sideBar'
+import RightSidebar from '@/rightSidebar/rightSidebar'
 import { ActivePageProvider } from '@/context/activePage'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <div className='page_container'>
           <Sidebar />
           {children}
+          <RightSidebar />
         </div>
         </ActivePageProvider>
       </body>
