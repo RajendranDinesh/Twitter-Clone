@@ -10,11 +10,11 @@ We're building this in our free time, purely for the joy of coding, and with an 
 
 ## Stack
 
-We've chosen the MERN stack for this project, which includes:
+We've chosen the MENN stack for this project, which includes:
 
 - **M**ongoDB: As our database system.
 - **E**xpress.js: For building the backend server.
-- **R**eact: For the frontend user interface.
+- **N**ext: For the frontend user interface.
 - **N**ode.js: As the runtime environment for our server.
 
 ## Current Status
@@ -47,7 +47,7 @@ If you'd like to get the project up and running on your local environment, follo
 
 2. Navigate to the project directory: `cd twitter-clone`
 
-3. Install the dependencies for both the server and the client:
+3. Install the dependencies for both the server(not available currently) and the client:
 
    ```bash
    cd frontend
